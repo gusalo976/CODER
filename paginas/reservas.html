@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas</title>
+  <link rel="stylesheet" href="../estilos/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="portada">
+      <a class="encabezado" href="../index.html">
+        <img src="../iconos/Logo.jpg" alt="Logo de la pagina">
+        <h1>ALQUILER TEMPORARIO</h1>
+      </a>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="./galeria.html">Galeria</a>
+            </li>
+            <li>
+              <a href="./ubicacion.html">Ubicacion</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a href="./reservas.html">Reservas</a>
+            </li>
+          </ul>
+        </nav>
+      
+    </div>
+  </header>
+
+  <main>
+    <form action="POST">
+
+      <label for="fechadesde">Fecha desde</label>
+      <input class="date" type="date" id="fechadesde">
+
+      <label for="fechahasta">Fecha hasta</label>
+      <input class="date" type="date" id="fechahasta">
+
+      <p>
+        Ocupacion
+      </p>
+
+      <select>
+
+        <option value="2 adultos">2 adultos</option>
+        <option value="3 adultos">3 adultos</option>
+        <option value="4 adultos">4 adultos</option>
+
+      </select>
+
+      <button class="buscar" type="submit">Buscar</button>
+
+
+    </form>
+
+  </main>
+
+  <footer class="piepagina">
+    <img src="../iconos/instagram.png" alt="Logo instagram">
+    <img src="../iconos/facebook.png" alt="Imagen facebook">
+    <img src="../iconos/gorjeo.png" alt="Imagen twiter">
+    <img src="../iconos/whatsapp.png" alt="Imagen whatsapp">
+  </footer>
+</body>
+
+</html>

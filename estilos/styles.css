@@ -1,0 +1,85 @@
+.portada{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.encabezado {
+  display: flex;
+  text-decoration: none;
+}
+
+h1 {
+  background-color: blanchedalmond;
+  font-size: 50px;
+  padding-left: 130px;
+  padding-right: 130px;
+  text-align: center;
+}
+
+.menu {
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.contenedor {
+  display: grid;
+}
+
+.imagenes {
+  justify-items: space-around;
+}
+
+.imagen img {
+  width: 100vw;
+  height: 90vh;
+}
+
+.ubicacion {
+  width: 1350px;
+  height: 350px;
+}
+
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor img {
+  /*display: flex;*/
+  justify-content: space-around;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.formulario {
+  display: grid;
+  grid-template-rows: 25% 25% 50%;
+  row-gap: 60px;
+  background-color: aqua;
+}
+/*.formulario form{
+  width: 50px;
+  height: 70px;
+  justify-content: center;
+}*/
+
+.piepagina {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+
+.piepagina img {
+  padding: 20px;
+  align-items: center;
+  width: 2vw;
+  height: 5vh;
+}
