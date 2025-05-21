@@ -13,54 +13,58 @@
     <div class="portada">
       <a class="encabezado" href="../index.html">
         <img src="../iconos/Logo.jpg" alt="Logo de la pagina">
-        <h1>ALQUILER TEMPORARIO</h1>
       </a>
-        <nav>
-          <ul class="menu">
-            <li>
-              <a href="./galeria.html">Galeria</a>
-            </li>
-            <li>
-              <a href="./ubicacion.html">Ubicacion</a>
-            </li>
-            <li>
-              <a href="./contacto.html">Contacto</a>
-            </li>
-            <li>
-              <a href="./reservas.html">Reservas</a>
-            </li>
-          </ul>
-        </nav>
-      
+      <h1>ALQUILER TEMPORARIO</h1>
+
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="./galeria.html">Galeria</a>
+          </li>
+          <li>
+            <a href="./ubicacion.html">Ubicacion</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="./reservas.html">Reservas</a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
   </header>
 
   <main>
-    <form action="POST">
+    <div class="reservas">
+      <img src="../images/20241230_110619.jpg" alt="Imagen de fondo">
+      <form action="POST">
 
-      <label for="fechadesde">Fecha desde</label>
-      <input class="date" type="date" id="fechadesde">
+        <label for="fechadesde">Fecha desde</label>
+        <input class="date" type="date" id="fechadesde">
 
-      <label for="fechahasta">Fecha hasta</label>
-      <input class="date" type="date" id="fechahasta">
+        <label for="fechahasta">Fecha hasta</label>
+        <input class="date" type="date" id="fechahasta">
 
-      <p>
-        Ocupacion
-      </p>
+        <p>
+          Ocupacion
+        </p>
 
-      <select>
+        <select>
 
-        <option value="2 adultos">2 adultos</option>
-        <option value="3 adultos">3 adultos</option>
-        <option value="4 adultos">4 adultos</option>
+          <option value="2 adultos">2 adultos</option>
+          <option value="3 adultos">3 adultos</option>
+          <option value="4 adultos">4 adultos</option>
 
-      </select>
+        </select>
 
-      <button class="buscar" type="submit">Buscar</button>
+        <button class="buscar" type="submit">Buscar</button>
+
+      </form>
 
 
-    </form>
-
+    </div>
   </main>
 
   <footer class="piepagina">

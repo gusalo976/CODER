@@ -13,8 +13,8 @@
     <div class="portada">
       <a class="encabezado" href="../index.html">
         <img src="../iconos/Logo.jpg" alt="Logo de la pagina">
-        <h1>ALQUILER TEMPORARIO</h1>
       </a>
+      <h1>ALQUILER TEMPORARIO</h1>
 
       <nav>
         <ul class="menu">
@@ -37,18 +37,23 @@
   </header>
 
   <main>
+
     <div class="formulario">
-      <form action="nombre">
-        <label for="Nombre">Nombre:</label>
-        <input type="text" name="Nombre" id="Nombre">
-      </form>
-      <form action="localidad">
-        <label for="Localidad">Localidad:</label>
-        <input type="text" name="Localidad" id="Localidad">
-      </form>
-      <form action="mensaje">
-        <label for="Mensaje">Mensaje:</label>
-        <textarea name="Mensaje" id="Mensaje"></textarea>
+      <form action="enviar.php" method="post">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" size="50" name="nombre" id="nombre">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" name="telefono" id="telefono">
+
+        <label for="consulta">Consulta:</label>
+        <textarea name="consulta" id="consulta" rows="4" cols="50"></textarea>
+
+        <br>
+        <button class="botonenviar" type="submit">Enviar</button>
       </form>
     </div>
   </main>
