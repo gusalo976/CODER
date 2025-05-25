@@ -40,23 +40,26 @@
     <div class="reservas">
       <img src="../images/20241230_110619.jpg" alt="Imagen de fondo">
       <form action="POST">
+        <div class="campo">
+          <label for="fechadesde">Fecha desde</label>
+          <input class="date" type="date" id="fechadesde">
+        </div>
 
-        <label for="fechadesde">Fecha desde</label>
-        <input class="date" type="date" id="fechadesde">
-
-        <label for="fechahasta">Fecha hasta</label>
-        <input class="date" type="date" id="fechahasta">
+        <div class="campo">
+          <label for="fechahasta">Fecha hasta</label>
+          <input class="date" type="date" id="fechahasta">
+        </div>
 
         <p>
           Ocupacion
         </p>
 
         <select>
-
-          <option value="2 adultos">2 adultos</option>
-          <option value="3 adultos">3 adultos</option>
-          <option value="4 adultos">4 adultos</option>
-
+          <div class="campo">
+            <option value="2 adultos">2 adultos</option>
+            <option value="3 adultos">3 adultos</option>
+            <option value="4 adultos">4 adultos</option>
+          </div>
         </select>
 
         <button class="buscar" type="submit">Buscar</button>

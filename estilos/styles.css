@@ -131,7 +131,7 @@ label,
 input,
 textarea {
   width: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 
@@ -145,12 +145,19 @@ textarea {
   background-color: aquamarine;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .piepagina img {
   padding: 20px;
   width: 2vw;
   height: 5vh;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.piepagina img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 480px) {
@@ -165,6 +172,10 @@ textarea {
     align-items: flex-start;
   }
 
+  .portada img {
+    width: auto;
+  }
+
   .menu {
     align-items: flex-end;
   }
@@ -176,10 +187,32 @@ textarea {
   main {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .imagenes img {
     opacity: 1;
+  }
+
+  .reservas form {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+  }
+
+  .campo {
+    justify-content: flex-end;
+  }
+
+  .buscar {
+    padding: 10px;
+  }
+
+  .piepagina{
+    gap: 15px;
+    padding: 15px;
+  }
+  .piepagina img{
+    width: 35px;
+    height: 35px;
   }
 }
