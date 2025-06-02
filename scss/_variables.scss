@@ -1,0 +1,26 @@
+$colorbody: rgb(163, 205, 241);
+$colorh1: rgb(16, 151, 241);
+$colorreservas: rgba(243, 242, 242, 0.8);
+$colorform: rgb(123, 123, 240);
+$colorbutton: grey;
+$colorpiepagina: aquamarine;
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    grid-row: 2 / 3;
+}
+
+footer {
+    grid-row: 3 / 4;
+}
+
+@mixin mobile{
+    @media (max-width:425px){
+        @content;
+    }
+}

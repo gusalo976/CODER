@@ -1,51 +1,103 @@
+* {
+  border: 0;
+  padding: 0;
+}
+
 header {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+body {
+  background-color: rgb(163, 205, 241);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
 main {
-  grid-row: 2/3;
+  grid-row: 2 / 3;
 }
 
 footer {
-  grid-row: 3/4;
+  grid-row: 3 / 4;
+}
+/*header*/
+.portada {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.formulario {
-  display: flex;
-  justify-content: center;
+.encabezado img {
+  width: 10vw;
+  height: 20vh;
 }
-.formulario form {
-  background-color: rgb(123, 123, 240);
-  width: 50%;
-  height: 90%;
+
+.portada h1 {
+  flex: 1 1 100%;
+  background-color: rgb(16, 151, 241);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  list-style-type: none;
 }
-.formulario label,
-.formulario input,
-.formulario textarea {
-  width: 50%;
-  margin-bottom: 10px;
-  font-size: 16px;
+
+.menu a {
+  text-decoration: none;
 }
-.formulario button {
-  font-size: 20px;
-  background-color: grey;
-  border-radius: 25px;
+
+.contenedor {
+  display: grid;
+  justify-content: space-between;
+}
+
+.imagenes img {
+  width: 250px;
+  height: 200px;
+  margin: 30px;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+.imagenes img:hover {
+  opacity: 1;
+  width: 260px;
+  height: 210px;
+}
+/*imagen de fondo*/
+.imagen img {
+  width: 100vw;
+  height: 90vh;
+}
+
+
+.ubicacion {
+  width: 100vw;
+  height: 50vh;
 }
 
 .reservas {
   position: relative;
 }
+
 .reservas img {
   width: 100vw;
   height: 90vh;
   opacity: 0.5;
   display: block;
 }
+
 .reservas form {
   position: absolute;
   top: 50%;
@@ -60,46 +112,35 @@ footer {
   border-radius: 10px;
   font-size: 20px;
 }
-
-header {
-  width: 100%;
+/*contacto*/
+.formulario {
   display: flex;
   justify-content: center;
 }
 
-.portada {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.portada .encabezado img {
-  width: 10vw;
-  height: 20vh;
-}
-.portada h1 {
-  flex: 1 1 100%;
-  background-color: rgb(16, 151, 241);
-  font-size: 1.8rem;
-  text-align: center;
-}
-.portada .menu {
+.formulario form {
+  background-color: rgb(123, 123, 240);
+  width: 50%;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  list-style-type: none;
-}
-.portada a {
-  text-decoration: none;
+  align-items: center;
 }
 
-.ubicacion {
-  width: 100vw;
-  height: 50vh;
+label,
+input,
+textarea {
+  width: 50%;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
+.formulario button {
+  font-size: 20px;
+  background-color: grey;
+  border-radius: 25px;
+}
+/*footer*/
 .piepagina {
   background-color: aquamarine;
   display: flex;
@@ -107,6 +148,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .piepagina img {
   padding: 20px;
   width: 2vw;
@@ -118,86 +160,59 @@ header {
   transform: scale(1.1);
 }
 
-.contenedor {
-  display: grid;
-  justify-content: space-between;
-}
-.contenedor img {
-  width: 250px;
-  height: 200px;
-  margin: 30px;
-  padding: 10px;
-  opacity: 0.5;
-}
-.contenedor .imagenes img:hover {
-  opacity: 1;
-  width: 260px;
-  height: 210px;
-}
-
-* {
-  border: 0;
-  padding: 0;
-}
-
-body {
-  background-color: rgb(163, 205, 241);
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
-}
-
-.imagen img {
-  width: 100vw;
-  height: 90vh;
-}
-
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .portada {
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .encabezado {
     align-items: flex-start;
   }
+
   .portada img {
     width: auto;
   }
+
   .menu {
     align-items: flex-end;
   }
+
   h1 {
     font-size: 1.5rem;
   }
+
   main {
     display: flex;
     flex-direction: column;
   }
+
   .imagenes img {
     opacity: 1;
   }
+
   .reservas form {
     display: flex;
     flex-direction: column;
     justify-items: flex-end;
   }
+
   .campo {
     justify-content: flex-end;
   }
+
   .buscar {
     padding: 10px;
   }
-  .piepagina {
+
+  .piepagina{
     gap: 15px;
     padding: 15px;
   }
-  .piepagina img {
+  .piepagina img{
     width: 35px;
     height: 35px;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

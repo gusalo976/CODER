@@ -1,0 +1,19 @@
+.piepagina {
+    background-color: $colorpiepagina;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+        padding: 20px;
+        width: 2vw;
+        height: 5vh;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}

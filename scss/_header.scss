@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .encabezado img {
+        width: 10vw;
+        height: 20vh;
+    }
+
+    h1 {
+        flex: 1 1 100%;
+        background-color: $colorh1;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}

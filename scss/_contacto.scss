@@ -1,0 +1,27 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+
+    form {
+        background-color: $colorform;
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label,
+    input,
+    textarea {
+        width: 50%;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 20px;
+        background-color: $colorbutton;
+        border-radius: 25px;
+    }
+}
